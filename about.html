@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <link href="https://fonts.cdnfonts.com/css/norwester" rel="stylesheet">
+    <title>About</title>
+</head>
+<body>
+    <header>
+
+        <video autoplay muted loop id="myVideo">
+            <source src="takir.mp4" type="takir.mp4">
+            Your browser does not support HTML5 video.
+          </video>
+
+        <div class="navbar">
+            <div class="logo"><a href="home.html">SEBERANG TAKIR</a></div>
+            <ul class="links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="place.html">Place</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="place.html">Place</a></li>
+            <li><a href="event.html">Event</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </div>
+
+        <h1>ABOUT KG.SEBERANG TAKIR</h1>
+
+    </header>
+
+    <img src="seberangtakir.jpg" alt="passport size.jpg">
+
+    <p> Unveiling the Enchantments of Kampung Seberang Takir: A Serene Escape in Kuala Nerus
+Kampung Seberang Takir, a coastal village nestled in the embrace of Kuala Nerus, Terengganu, 
+Malaysia, transcends the boundaries of a mere geographical location. It unfolds as a captivating 
+tapestry woven with threads of rich history, vibrant culture, and breathtaking natural beauty. 
+Stepping into this village is akin to embarking on a journey through time, where tradition 
+whispers tales of the past and the warmth of the present engulfs you in its comforting embrace. </p>
+
+        <div class="video">
+            <h1>Seberang takir drone view</h1>
+        <video controls src="seberangtakirview.mp4"></video>
+        </div>
+    
+
+        <footer>&copy; Copyright 2024. IMS456 grouping Assignment. 
+        
+            This Website Are For Purpose of Assignment Only. 
+    
+            Recommended Browser Google Chrome Resolution 133x768.
+    
+            Last Update 1 Feruary 2024. 
+    
+            All Rights Reserved. </footer>
+
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function() {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+
+
+    </script>
+    
+</body>
+</html>

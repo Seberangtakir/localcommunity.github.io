@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shopping.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.cdnfonts.com/css/norwester" rel="stylesheet">
+    <title>shopping</title>
+</head>
+<body>
+
+    <header>
+
+        <div class="navbar">
+            <div class="logo"><a href="home.html">SEBERANG TAKIR</a></div>
+            <ul class="links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                        <a href="history.html">History</a>
+                        <div class="dropdown">
+                            <button class="dropbtn">Place
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                        <a href="vacation.html">vacation</a>
+                        <a href="shopping.html">shopping mall</a>
+                        <a href="accomodation.html">accomodation</a>
+                    </div>
+                </div>
+                <li><a href="event.html">event</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="place.html">Place</a></li>
+            <li><a href="event.html">Event</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </div>
+
+        <h1>SHOPPING MALL NEAR TO KG SEBERANG TAKIR</h1>
+
+    </header>
+
+    <video autoplay muted loop id="myVideo">
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+
+      <div class="image1">
+        <h3>1.KUALA TERENGGANU CITY CENTER (KTCC)</h3>
+        <img src="ktccmall.jpg" alt="ktccmall">
+        <p> KTCC Mall is indeed the first and largest modern shopping mall in Kuala Terengganu, 
+            gracing the city with its presence since its grand opening in January 2020. 
+            It's not only a shopping haven but also a landmark and a popular spot for locals
+            and tourists alike. The mall's design further elevates the experience. 
+            Natural light streams in through strategically placed skylights, 
+            bathing the interior in a warm glow. Lush greenery accents the corridors, adding a 
+            touch of nature's serenity amidst the urban symphony. Comfortable seating areas 
+            provide respite for weary shoppers, while art installations and cultural displays offer 
+            glimpses into the rich heritage of Terengganu. </p>
+      </div>
+
+<div class="image2">
+    <h3>2.MAYANG MALL</h3>
+    <img src="mayangmall.jpg" alt="mayangmall.jpg">
+    <p> Mayang Mall is a new lifestyle mall that will soon blossom in Kuala Terengganu
+        that anchored by SOGO, Kuala Lumpur's largest department store and bring the best of Japan to 
+        Kuala Terengganu. Scheduled to unveil its doors around Raya 2024, Mayang Mall occupies a strategic 
+        location just a stone's throw from the iconic Pasar Payang market. This convenient accessibility, 
+        coupled with its proximity to the Drawbridge, ensures it will draw not only local patrons but also
+         shoppers from neighboring states like Kelantan and Pahang.</p>
+</div>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function() {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+
+
+    </script>
+
+            <footer>&copy; Copyright 2024. IMS456 grouping Assignment. 
+        
+                This Website Are For Purpose of Assignment Only. 
+        
+                Recommended Browser Google Chrome Resolution 133x768.
+        
+                Last Update 1 Feruary 2024. 
+        
+                All Rights Reserved.</footer>
+  
+</body>
+</html>

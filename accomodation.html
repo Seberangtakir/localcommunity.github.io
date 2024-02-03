@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="accomodation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.cdnfonts.com/css/norwester" rel="stylesheet">
+    <title>Accomodation</title>
+</head>
+<body>
+
+    <header>
+
+        <div class="navbar">
+            <div class="logo"><a href="home.html">SEBERANG TAKIR</a></div>
+            <ul class="links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                        <a href="history.html">History</a>
+                        <div class="dropdown">
+                            <button class="dropbtn">Place
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                        <a href="vacation.html">vacation</a>
+                        <a href="shopping.html">shopping mall</a>
+                        <a href="accomodation.html">accomodation</a>
+                    </div>
+                </div>
+                <li><a href="event.html">event</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="place.html">Place</a></li>
+            <li><a href="event.html">Event</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </div>
+
+        <h1>SHOPPING MALL NEAR TO KG SEBERANG TAKIR</h1>
+
+    </header>
+
+    <video autoplay muted loop id="myVideo">
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+
+      <div class="image1">
+        <h3>1.ANJUNG PANTAI SEBERANG TAKIR</h3>
+        <img src="anjungpantai.jpg" alt="anjungpantai">
+        <p> Anjung Pantai is one of an immediately transported to a world of serenity. 
+            Rows of charming chalets, built in traditional Malay architecture, stand
+            amidst lush greenery, their wooden exteriors blending harmoniously with 
+            the natural surroundings. The air hums with the gentle melody of the ocean, 
+            a constant invitation to relax and unwind. Each chalet offers a haven of comfort, 
+            equipped with essential amenities to ensure a pleasant stay. Verandas, adorned with 
+            comfortable seating, beckon guests to step outside and embrace the breathtaking sea views. </p>
+      </div>
+
+<div class="image2">
+    <h3>2.MASJID SEBERANG TAKIR</h3>
+    <img src="masjid.jpg" alt="masjid seberang takir.jpg">
+    <p>The architectural style of Masjid Seberang Takir is a captivating blend of traditional
+        Malay elements and modern influences. The main prayer hall, adorned with intricate 
+        calligraphy and geometric patterns, evokes a sense of awe and serenity. The towering minaret, 
+        reaching towards the heavens, serves as a beacon of faith and guidance. Surrounding the mosque 
+        are lush gardens, providing a tranquil space for reflection and prayer. Funded entirely through 
+        public donations, the mosque embodies the spirit of unity and collaboration that binds the people 
+        of Seberang Takir together. </p>
+</div>
+
+<div class="pagination">
+            <a href="vacation.html" class="previous">&laquo; Previous</a>
+            <a href="accomodation.html" class="next">Next &raquo;</a>
+        </div>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function() {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+
+
+    </script>
+
+            <footer>&copy; Copyright 2024. IMS456 grouping Assignment. 
+        
+                This Website Are For Purpose of Assignment Only. 
+        
+                Recommended Browser Google Chrome Resolution 133x768.
+        
+                Last Update 1 Feruary 2024. 
+        
+                All Rights Reserved.</footer>
+  
+</body>
+</html>

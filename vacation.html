@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vacation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.cdnfonts.com/css/norwester" rel="stylesheet">
+    <title>Vacation</title>
+</head>
+<body>
+
+    <header>
+
+        <div class="navbar">
+            <div class="logo"><a href="home.html">SEBERANG TAKIR</a></div>
+            <ul class="links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                        <a href="history.html">History</a>
+                        <div class="dropdown">
+                            <button class="dropbtn">Place
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                        <a href="vacation.html">vacation</a>
+                        <a href="shopping.html">shopping mall</a>
+                        <a href="accomodation.html">accomodation</a>
+                    </div>
+                </div>
+                <li><a href="event.html">event</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="place.html">Place</a></li>
+            <li><a href="event.html">Event</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </div>
+
+        <h1>VACATION PLACE</h1>
+
+    </header>
+
+    <video autoplay muted loop id="myVideo">
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+
+      <div class="image1">
+        <h3>1.DRAWBRIDGE</h3>
+        <img src="placedrawbridge.jpg" alt="Drawbridge">
+        <p> Towering over the Terengganu River, the Kuala Terengganu Drawbridge stands as a majestic symbol of progress and 
+            heritage. This awe-inspiring structure, inaugurated in 2019, is not just a vital transportation link but also a 
+            tourist attraction and a source of local pride. Near to Drawbridge they held a lot of activities such as light festival,
+        food truck and food festival. The tourist also can take a walk on the skybridge, a glass-floored walkway offering 
+        breathtaking 360-degree views of the city, the river, and the surrounding landscape. 
+        It's a perfect spot for capturing stunning photos and memories. </p>
+      </div>
+
+<div class="image2">
+    <h3>2.PANTAI MIAMI</h3>
+    <img src="pantaimaimi.jpg" alt="pantaimaimi.jpg">
+    <p> Nestled amidst the lush greenery of Seberang Takir, Kuala Terengganu, lies a hidden gem of Pantai Miami. 
+        Unlike its namesake, this beach exudes a tranquil charm, far removed from the glitz and glamour of its 
+        American counterpart. Here, swaying palm trees whisper secrets to the gentle breeze, and the turquoise 
+        waters beckon with the promise of serenity. Pantai Miami unfolds like a scene from a tropical dream. 
+        Pristine white sand stretches as far as the eye can see, offering a soft cushion for sunbathers and 
+        sandcastle builders alike. The crystal-clear waters are perfect for a refreshing dip, while gentle waves 
+        lap against the shore, creating a soothing rhythm. Lush vegetation fringes the beach, providing shade and 
+        a habitat for diverse birdlife. The air hums with the melody of nature, creating a symphony that calms the soul. </p>
+</div>
+
+<div class="image3">
+    <h3>3.PANTAI TELUK KETAPANG</h3>
+    <img src="telukketapang.jpg" alt="telukketapang.jpg">
+    <p> Pantai Teluk Kepang is relaxed sandy beach with 
+        many vendors for the local batter-fried fish specialty "ikan celup tepung". 
+        One of the most magical experiences at Pantai Teluk Ketapang is witnessing 
+        the breathtaking sunset over the South China Sea. As the sun dips below the horizon, 
+        the sky transforms into a canvas of warm hues, casting a golden glow over the entire beach. 
+        The tranquil atmosphere and the play of colors make this a perfect moment for couples, families, 
+        or solo travelers seeking a moment of reflection and awe. Not only that there are a lot of activities
+        that people can do here. One of the activities is camping.</p>
+</div>
+
+<div class="pagination">
+            <a href="place.html" class="previous">&laquo; Previous</a>
+            <a href="accomodation.html" class="next">Next &raquo;</a>
+        </div>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function() {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+
+
+    </script>
+
+            <footer>&copy; Copyright 2024. IMS456 grouping Assignment. 
+        
+                This Website Are For Purpose of Assignment Only. 
+        
+                Recommended Browser Google Chrome Resolution 133x768.
+        
+                Last Update 1 Feruary 2024. 
+        
+                All Rights Reserved.</footer>
+  
+</body>
+</html>
